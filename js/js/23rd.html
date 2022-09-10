@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        // var arr = [10,20,30,40,12]
+        // var sum =  arr.reduceRight(function(x,y)
+        //                 {
+        //                 return x-y;
+        //                 })     
+        // console.log(sum)
+
+            // function sum(fn,ln){
+            //     this.fname=fn
+            //     this.lname=ln
+            // }
+            // var obj =new sum("rahul","kumar")
+            // console.log(obj);
+            // obj.age=32; 
+            // console.log(obj)
+
+
+            // sum.prototype.age=43;
+            // console.log(obj)
+
+function sum(n){
+    if(n==0)
+    return;
+    else 
+    console.log("bharat");
+    return sum(n-1)
+}
+
+var g = sum(5)
+console.log(g);
+
+// function foo(n){
+//             if(n < 1)
+//                 return;
+//             console.log("begin : "+n);
+//             foo(n-1);
+//             console.log("end : "+n);
+//         }
+//         foo(3)
+
+
+
+//     function sum (n, total=0){
+//         if (n===0)
+//             return total;
+        
+//         return sum( (n-1), total+=n);
+
+//     }
+//    console.log(sum(5))
+    </script>
+</body>
+</html>

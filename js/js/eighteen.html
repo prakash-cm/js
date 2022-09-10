@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // timer
+       /*
+        setTimeout(fun,timemills)
+        clearTimeout(timout)
+
+        setInterval(fun,timemills)
+        clearInterval(timeinterval)
+
+       */
+
+       /*
+
+    alert(str)
+    boolean =  confirm(str)
+    string =  prompt(str)
+    print()
+    open("string")
+
+
+       */
+
+     //  alert("Hi Puru You are a danger man !!")
+
+    // var a =  confirm("are you sure ?")
+    // a?window.location.replace("https://www.google.com"):window.location.replace("https://www.facebook.com")
+    
+   // print()
+    
+
+
+//    var time =  setTimeout(()=>{
+//         alert("time completed !!")
+//     },5000)
+
+//    var cnf =  confirm("Are you sure")
+//    if(cnf){
+//     clearTimeout(cnf);
+//    }
+
+
+// setInterval(()=>{
+//     console.log("hello")
+// },5000)
+
+(function(){
+var i = 10;
+var time = setInterval(()=>{
+    if(i == 5)
+    {
+       var cnf =  confirm("Are you Sure ?")
+       cnf?clearInterval(time):'';
+    }
+
+    console.log(i);
+
+    if(i == 1){
+
+        clearInterval(time);
+        location.assign("https://www.google.com");
+    }
+    i--;
+
+},1000
+)
+})()
+
+// console.log(navigator.appName)
+// console.log(navigator.language)
+// console.log(navigator.platform)
+// setInterval(()=>{
+//     if(!navigator.onLine){
+//        console.log("offline")
+//     }
+//     else{
+//         console.log("online")
+//     }
+// },1000)
+
+// recursive function
+
+// function dd()
+// {
+//     var i = 1;
+// function display()
+// {
+
+//     if(i == 10)
+//     {
+//         return;
+//     }
+//     i++;
+//     console.log("Self call")
+//     display();
+// }
+// display();
+// }
+
+// dd();
+
+
+function tt(n)
+{
+    if(n==0){
+        return 1;
+    }
+    console.log("End : "+n)
+    tt(n-1);
+    console.log("Start : "+n)
+}
+
+tt(3);
+
+function fact(n){
+    if(n==1 || n==0){
+        return 1;
+    }
+
+    return n*fact(n-1);
+}
+
+console.log(fact(5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

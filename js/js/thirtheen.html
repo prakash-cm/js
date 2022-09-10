@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var arr = [
+           {
+           id:1,
+           name:"nishant",
+           email:"nknishant91@gmail.com",
+           mobile:[
+            {phone:"7011214976"},  // arr[0].mobile[0].phone
+            {phone:"9015785832"}
+           ],
+           address:{house:"D-5 Nithari Kand",city:"delhi",pincode:"110018"}, 
+        }, 
+        
+        {
+           id:2,
+           name:"Abhijeet",
+           email:"abhijeet@gmail.com",
+           mobile:[
+            {phone:"9876543255"},
+            {phone:"123456789"}
+           ],
+           address:{house:"R-67",city:"Kolkatta",pincode:"110018"},
+        }, 
+
+
+        {
+           id:3,
+           name:"mukesh",
+           email:"mukesh@gmail.com",
+           mobile:[
+            {phone:"334567777"},
+            {phone:"98765432"}
+           ],
+           address:{house:"rz-12",city:"delhi",pincode:"110018"},
+        }, 
+
+        {
+           id:4,
+           name:"Surendra Koli",
+           email:"koli@gmail.com",
+           mobile:[
+            {phone:"123456789"},
+            {phone:"098765432"}
+           ],
+           address:{house:"D-5 Nithari Kand",city:"delhi",pincode:"110018"},
+        }, 
+
+        {
+           id:5,
+           name:"rahul",
+           email:"rahul91@gmail.com",
+           mobile:[
+            {phone:"23456789"},
+            {phone:"098765432"}
+           ],
+           address:{house:"Rz-48 Dwarka Mor",city:"delhi",pincode:"110018"},
+        }, 
+         ]
+
+
+    var id = parseInt(prompt("Enter Customer ID"))
+    console.log("NAME \t EMAIL \t MOBILE \t ADDRESS")
+    for(let i = 0;i<arr.length;i++){
+        let obj = arr[i];
+        if(obj.id == id)
+        {
+            console.log(`${obj.name} \t ${obj.email} \t ${obj.mobile[0].phone},${obj.mobile[1].phone} \t ${obj.address.house}`)
+            break;
+        }
+        }
+
+   //  var arr = [10,20,30];
+   //  for(let bharat of arr){
+   //      console.log(bharat);
+   //  }
+   //  var id = parseInt(prompt("Enter Customer ID"))
+   //  console.log("NAME \t EMAIL \t MOBILE \t ADDRESS")
+   //  for(let obj of arr){
+   //      if(obj.id == id)
+   //      {
+   //          console.log(`${obj.name} \t ${obj.email} \t ${obj.mobile[0].phone},${obj.mobile[1].phone} \t ${obj.address.house}`)
+   //          break;
+   //      }
+   //      }
+
+
+/*
+    var arr = [10]
+    const [a,b=1] = arr;
+    console.log(`${a} ${b}`);
+
+ */  
+
+//  var arr = [10,20,30,30,12]
+//  var ff =  [10,20,...arr];
+//  console.log(ff);
+
+
+// const [m,n,...bharat] = arr;
+// console.log(bharat)
+
+
+// var obj = {a:20,...arr}
+// console.log(obj);
+
+// const {email:o,name:p,k:u=20} = {name:"mukesh",email:"rahul@gmail.com"}
+// console.log(u);
+
+// var obj = {name:"mukesh",email:"rahul@gmail.com"}
+// var mm = [10,20,30,...obj];
+
+// console.log(mm);
+
+// var arr =[10,20,30.40,50,050,5]
+// for(let aff of arr)
+// console.log(aff);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object
+        var obj = {}; // object literals
+        var obj = new Object();
+        var str = new String();
+
+        var copy1 = {
+            height:200,
+            width:100,
+            unit:"cm",
+            color:"red",
+        }
+
+        var copy2 = {
+            height:200,
+            width:100,
+            unit:"cm",
+            color:"red",
+        }
+
+        // INSERT DATA INTO OBJECT
+        copy2.brand_name = "classimate";
+        // GET DATA FROM OBJECT
+        let w = copy2.width;
+        console.log(w);
+        console.log(copy2)
+        // UPDATE
+        copy2.width = 90;
+        console.log(copy2)
+
+// DELETE
+
+        delete copy2.brand_name;
+        console.log(copy2);
+
+
+// 
+var obj = {a:20};
+var g = obj['a'];
+
+console.log(g);
+
+var nishant = {
+    name:"nishant",
+    kam:"padhana",
+    rahna:"dwraka mor",
+    age:32,
+    occupation:"",
+    fee:"koi deta nahi",
+}
+
+var bharat = {
+
+}
+
+
+var manish= {
+
+}
+
+
+var arr = [manish,nishant,bharat];
+
+var prakash = arr[1];
+console.log(prakash.age);
+
+console.log(arr[1].age);
+
+var arr = [
+    {name:"nishant"},
+    {name:"bharat"},
+    {name:"mukesh"}
+]
+
+console.log(arr[2].name);
+
+
+var f = 20;
+var arr = [f,20,30]
+
+
+
+
+var obj = {a:30}
+
+var k = obj;
+k.a = 80;
+console.log(obj.a);
+console.log(k.a);
+    </script>
+</body>
+</html>

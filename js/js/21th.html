@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = "Hello World"
+       // var ff =  a.split("o");
+      var g=    a.replace("o","k")
+      console.log(g);
+
+
+       // console.log(ff);
+
+    //   var d =  a.includes("o")
+
+
+      // filter,map,forEach
+
+// function prakash(i,j,k){
+//     console.log(i,j,k)
+// }
+// var arr =  [10,20,30,40];
+// arr.forEach(prakash);
+
+
+
+// var arr =  [10,20,30,40];
+// arr.forEach((i,j,k)=>{
+//     console.log(i,j,k)
+// });
+// var arr = [10,20,30,40,50,12,34];
+// var a = arr.map((i)=>{
+//     return `<li>${i}</li>`
+// })
+// document.write(a.join(""));
+
+
+
+var arr = [10,20,30,40,50,12,34];
+var a = arr.filter((i)=>{
+    return  i > 20
+})
+console.log(a);
+
+//22class
+
+var arr = [10,20,30,40];
+
+var f = arr.splice(1,2,...[10,23,34])
+
+console.log(f);
+
+var arr = [10,20,30,40];
+
+var f = arr.slice(-4,-1)
+console.log(f)
+
+var arr = [10,20,30,40];
+arr.push(34);
+arr.pop()
+arr.shift(12);
+arr.unshift()
+
+
+arr.includes(30)
+
+
+
+var obj = {
+    name:"nishant",
+    age:20
+}
+var arr = []
+for(const asd in obj){
+    // console.log(obj[asd])
+
+    arr.push(asd);
+}
+
+var gg = Object.keys(obj);
+
+console.log(Object.values(obj));
+
+var arr = [10,20,30,40];
+
+var g = arr.indexOf(30)
+console.log(g)
+
+var arr = [10,20,30,40];
+var gg = arr.join("")
+console.log(gg);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

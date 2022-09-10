@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <script>
+        
+        var employee =[
+            {name:"manish",
+             occupatio:"nhi pdhna",
+             address:{
+                 pincode:110086,
+                 house:"h-22",
+                 phone:9911557406
+             }
+        }
+        ,
+            {name:"satyendra",
+             occupatio:"jail gya",
+             address:{
+                 pincode:110078,
+                 house:"h-77",
+                 phone:92817872372
+             }
+             },
+             {name:"mose wala",
+             occupatio:"gangster",
+             address:{
+                 pincode:110078,
+                 house:"h-7",
+                 phone:92817872372
+             }
+             }
+        ]
+
+        var table = "<table border='2'>";
+            table+=`<tr>
+                <th>Name</th>
+                <th>Occupation</th>
+                <th>House No</th>
+                </tr>`
+        for(let dd of employee){
+           
+           table+=`<tr>
+
+                <td>${dd.name}</td>
+                <td>${dd.occupatio}</td>
+                <td>${dd.address.house}</td>
+
+            </tr>
+            `
+        }
+
+        table+="</table>"
+
+        document.write(table);
+        
+    </script>
+</body>
+</html>

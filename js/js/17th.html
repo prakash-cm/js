@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // recursive function / recursion
+
+        // function display()
+        // {
+        //     console.log("hello");
+        //     display();
+        // }
+
+        // display();
+
+
+        function display(ntimes)
+        {
+            if(ntimes < 1)
+                return;
+            console.log("Prakash Jawedkar");
+            ntimes-=1; // ntimes = ntimes-1
+            display(ntimes);
+        }
+
+        display(10);
+
+
+        function foo(n){
+            if(n < 1)
+                return;
+            console.log("begin : "+n);
+            foo(n-1);
+            console.log("end : "+n);
+        }
+        foo(3)
+
+
+    function fact(n){
+        if(n==1 || n==0){
+            return 1;
+        }
+
+        return n*fact(n-1);
+    }
+
+  let g=    fact(5);
+  console.log(g);
+
+
+
+
+    </script>
+</body>
+</html>

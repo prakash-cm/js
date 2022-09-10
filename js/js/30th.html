@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            animation-name: pop;
+            animation-duration: 0.3s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        .popup_active{
+            display: none;
+        }
+       
+
+        @keyframes pop {
+            from{
+                opacity: 0;
+                top:0%;
+            }
+            to{
+                opacity: 1;
+                top:10%
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <span id="open_popup">open</span>
+    <div class="popup popup_active">
+        <span id="close_popup">close</span>
+    </div> -->
+
+
+    <span id="open_popup">open</span>
+    <div class="popup popup_active">
+        <span id="close_popup">close</span>
+    </div>
+    <script src="./30th.js"></script>
+</body>
+</html>
